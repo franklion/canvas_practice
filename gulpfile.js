@@ -25,8 +25,7 @@ gulp.task('compile-compass', function() {
     .pipe(compass({
       css: 'dist/assets/css',
       sass: 'scss',
-      comments: false,
-      debug: true
+      comments: false
     }))
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(notify({message: 'Compass task complete'}));
@@ -40,7 +39,7 @@ gulp.task('compile-coffee', function () {
         "level": "ignore"
       }
     }))
-    .pipe(coffeelint.reporter())
+    //.pipe(coffeelint.reporter())
     .pipe(coffee())
     .pipe(gulp.dest('dist/assets/js'))
     .pipe(uglify())
@@ -57,7 +56,7 @@ gulp.task('clean', function () {
 
 /* watch file */
 gulp.task('watch', function () {
-  gulp.watch('js/**/*.coffee', ['compile-coffee']);
+  gulp.watch('js/*.coffee', ['compile-coffee']);
   gulp.watch('scss/**/*.scss', ['compile-compass']);
 });
 

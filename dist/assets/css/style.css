@@ -91,7 +91,7 @@ h1 {
   text-align: center; }
 
 .article {
-  width: 500px;
+  width: 600px;
   height: 100%;
   margin: 0 auto;
   font-size: 0; }
@@ -99,6 +99,10 @@ h1 {
     display: inline-block;
     font-size: 24px;
     vertical-align: middle; }
+  .article #my-default {
+    display: inline-block;
+    vertical-align: middle;
+    background: #000033; }
   .article #my-tree {
     display: none;
     vertical-align: middle; }
@@ -106,6 +110,9 @@ h1 {
     display: none;
     vertical-align: middle; }
   .article #my-circle {
+    display: none;
+    vertical-align: middle; }
+  .article #my-geometry {
     display: none;
     vertical-align: middle; }
 
