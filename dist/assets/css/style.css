@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+h1 {
+  font-size: 60px; }
+
+.top {
+  width: 100%;
+  height: 200px;
+  background: #ffbf98;
+  text-align: center;
+  line-height: 200px; }
+
+.aside {
+  width: 20%;
+  height: 800px;
+  background: #ffd767;
+  text-align: center;
+  float: left; }
+  .aside ul {
+    display: inline-block;
+    vertical-align: middle;
+    height: 200px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: left; }
+    .aside ul li {
+      margin-top: 20px;
+      padding: 10px; }
+      .aside ul li:hover {
+        background-color: #a1d9ff;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px; }
+
+.aside:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 40%; }
+
+.section {
+  width: 80%;
+  height: 800px;
+  background: #eee;
+  float: left;
+  text-align: center; }
+
+.article {
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 0; }
+  .article .article-text {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: middle; }
+  .article #my-tree {
+    display: none;
+    vertical-align: middle; }
+  .article #my-square {
+    display: none;
+    vertical-align: middle; }
+  .article #my-circle {
+    display: none;
+    vertical-align: middle; }
+
+.article:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle; }
+
+.clear {
+  clear: both; }
+
+.active {
+  display: inline-block; }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #d1ffbb;
+  margin-bottom: 0px;
+  font-size: 24px;
+  line-height: 100px;
+  text-align: center; }
