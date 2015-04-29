@@ -1,0 +1,9 @@
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #d1ffbb;
+  margin-bottom: 0px;
+  font-size: 24px;
+  line-height: 100px;
+  @include text-alien;
+}

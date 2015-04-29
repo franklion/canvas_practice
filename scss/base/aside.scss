@@ -1,0 +1,30 @@
+.aside {
+  width: 20%;
+  height: 800px;
+  background: #ffd767;
+  @include text-alien();
+  float: left;
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    height: 200px;
+    padding: 20px;
+    font-size: 30px;
+    @include text-alien(left);
+    li {
+      margin-top: 20px;
+      padding: 10px;
+      &:hover {
+        background-color: #a1d9ff;
+        @include border-radius(25px);
+      }
+    }
+  }
+}
+.aside:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 40%;
+
+}

@@ -1,0 +1,55 @@
+.section {
+  width: 80%;
+  height: 800px;
+  background: #eee;
+  float: left;
+  @include text-alien;
+}
+.article {
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 0;
+  .article-text {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: middle;
+  }
+  #my-default {
+    display: inline-block;
+    vertical-align: middle;
+    background: #000033;
+  }
+  #my-tree {
+    display: none;
+    vertical-align: middle;
+  }
+  #my-square {
+    display: none;
+    vertical-align: middle;
+    //background-color: #7fbcff;
+  }
+  #my-circle {
+    display: none;
+    vertical-align: middle;
+  }
+  #my-geometry {
+    display: none;
+    vertical-align: middle;
+    //background-color: palevioletred;
+  }
+
+}
+.article:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.clear {
+  clear: both;
+}
+.active {
+  display: inline-block;
+}

@@ -1,0 +1,6 @@
+@mixin text-alien($align: center) {
+  text-align: $align;
+}
+h1 {
+  font-size: 60px;
+}
